@@ -4,7 +4,7 @@
 
 # ThinkRice
 
-A collection of configurations and assets for ricing. This project focuses on terminal appearance, Lenovo/ThinkPad visual identity, and ThinkPad-themed wallpapers.
+A collection of configurations and assets for linux ricing. This project focuses on terminal appearance, Lenovo/ThinkPad visual identity, and ThinkPad-themed wallpapers.
 
 ## Project contents
 
