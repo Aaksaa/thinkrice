@@ -18,12 +18,11 @@ A collection of configurations and assets for linux ricing. This project focuses
 
 Several configurations are available:
 
-- `fastfetch/ascii` - contains ASCII logos that can be called through the Neofetch configuration, including several variations of ThinkPad, Lenovo, ThinkCentre, and ThinkServer logos.
+- `fastfetch/ascii` - contains ASCII logos that can be called through the
+ Neofetch configuration, including several variations of ThinkPad, Lenovo, ThinkCentre, and ThinkServer logos.
 - `fastfetch/configs` - several examples of ready-to-use configurations for fastfetch.
 
 The configuration displays information such as device, CPU, GPU, memory, disk, operating system, kernel, shell, desktop environment/window manager, uptime, date, and system installation age.
-
-Before installing, you can check [this page](./fastfetch/README.md) first.
 
 ### Neofetch
 
@@ -41,9 +40,34 @@ The `wallpapers/` directory contains ThinkPad-themed PNG wallpapers. Will be add
 - [Fastfetch](https://github.com/fastfetch-cli/fastfetch) or [Neofetch](https://github.com/dylanaraps/neofetch).
 - A Nerd Font so that icons in the terminal output display correctly. (optional)
 
-## Installation
+## Fastfetch Installation
 
-You can install manually with gitclone, rename the file and copy the file into ~/.config/fastfetch/. Don't forget to renaming the file into config.jsonc. Maybe i will make the install.sh file soon.
+Before installing, you can check [this page](./fastfetch/README.md) first.
+
+### One-liner (recommended)
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/aaksaa/thinkrice/main/install.sh | bash
+```
+
+Or with wget:
+
+```bash
+wget -qO- https://raw.githubusercontent.com/aaksaa/thinkrice/main/install.sh | bash
+```
+
+Non-interactive (pick a config by name):
+
+```bash
+THINKRICE_CONFIG=thinkpad-vertical.jsonc \
+  curl -fsSL https://raw.githubusercontent.com/aaksaa/thinkrice/main/install.sh | bash
+```
+
+The script copies the selected config to `~/.config/fastfetch/config.jsonc`
+and all ASCII logos to `~/.config/fastfetch/ascii/`. Existing config is
+backed up to `~/.config/fastfetch-backup-<timestamp>/`.
+
+Or you can install manually with gitclone, rename the file and copy the file into ~/.config/fastfetch/. Don't forget to renaming the file into config.jsonc.
 
 ## Running Fastfetch
 
